@@ -13,6 +13,42 @@
     "prereleasy": "bash lint.sh"
   },
   "credentialType": "absolute",
-  "policies": [],
+  "policies": [
+    {
+      "name": "send-message"
+    },
+    {
+      "name": "CancelPedidos"
+    },
+    {
+      "name": "AcessaTodosPedidos"
+    },
+    {
+      "name": "ListOrders"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.google.com",
+        "path": "/cities"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.google.com",
+        "path": "/clients"
+      }
+    }
+  ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
